@@ -1,8 +1,8 @@
 #include "ProfilerOutput.h"
 #include <fstream>
 #include <iostream>
-#include <json.hpp>  // For JSON Serialization
-#include <tinyxml2.h>  // For XML serialization
+#include "json.hpp"  // For JSON Serialization
+#include "tinyxml2.h"  // For XML serialization
 
 using json = nlohmann::json;
 using namespace tinyxml2;

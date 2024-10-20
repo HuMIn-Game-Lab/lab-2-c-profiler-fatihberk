@@ -6,10 +6,11 @@
 class ProfiledSection {
 public:
     ProfiledSection(const char* sectionName, const char* fileName, const char* funcName, int lineNum);
-
+    ProfiledSection() = default;
     void start();
     void end();
     std::string getStatistics() const;
+    void calculateStatistics();
     
     const char* sectionName;
     const char* fileName;
