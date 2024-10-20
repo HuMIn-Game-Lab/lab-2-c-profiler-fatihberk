@@ -1,0 +1,3 @@
+Section,Call Count,Total Time,Min Time,Max Time,Average Time,File,Function,Line
+Insertion Sort,1,2.2091e-06,2.2091e-06,2.2091e-06,2.2091e-06,Code/main.cpp,quicksort,37
+Quicksort,1,7.37514e-06,7.37514e-06,7.37514e-06,7.37514e-06,Code/main.cpp,main,80

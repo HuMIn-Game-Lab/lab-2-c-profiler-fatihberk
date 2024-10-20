@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 # Load profiler data
-data = pd.read_csv('profiler_output.csv')
+data = pd.read_csv('OutputFiles/profiler_output.csv')
 
 # Convert 'Total Time' to microseconds (µs) for readability
 data['Total Time (µs)'] = data['Total Time'] * 1e6  # Convert from seconds to microseconds (µs)
@@ -34,7 +34,7 @@ plot_timeline(axes[1])       # Bottom plot: Timeline of section calls
 plt.tight_layout()
 
 # Save the figure as a single image file
-plt.savefig('VisulizationAfterImprovements.png')
+plt.savefig('OutputFiles/VisulizationAfterImprovements.png')
 
 # Show the figure
 plt.show()

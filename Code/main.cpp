@@ -84,7 +84,7 @@ int main() {
     profiler.endSection("Quicksort");
 
     // Output the profiler results to CSV
-    profiler.outputToFile("CSV");  // You can also add support for JSON/XML
+    profiler.outputToFile("CSV"); 
 
     return 0;
 }
