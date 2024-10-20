@@ -8,16 +8,16 @@
 
 class Profiler {
 public:
-    static Profiler& getInstance(); // Singleton pattern for easy access
+    static Profiler& getInstance(); // Singleton
     void startSection(const char* sectionName, const char* fileName, const char* funcName, int lineNum);
     void endSection(const char* sectionName);
     void outputToFile(const std::string& format);
-    
+
 private:
     std::unordered_map<std::string, ProfiledSection> sections;
     std::stack<std::string> sectionStack;
-    Profiler() = default; // Private constructor for Singleton
-    void calculateStatistics();
+    Profiler() = default;  // Private constructor for Singleton
+    void calculateStatistics();  // Add this if needed in the future
 };
 
 #endif
